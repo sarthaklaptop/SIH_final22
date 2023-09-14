@@ -35,8 +35,8 @@ db.once('open', () => {
 app.post('/api/signup', async (req, res) => {
   try {
     // Create a new user based on the request body
-    const { firstName, lastName, email, password, confirmPassword } = req.body;
-    const user = new User({ firstName, lastName, email, password, confirmPassword });
+    const { firstName, lastName, email, password} = req.body;
+    const user = new User({ firstName, lastName, email, password});
 
     // Save the user to the database
     await user.save();

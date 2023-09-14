@@ -68,6 +68,16 @@ const Navbar = (props) => {
                     </button>
                 </Link>
             }
+            { !isLoggedIn &&
+                <Link to="/expert">
+                    <button
+                        className='bg-richblack-800 text-richblack-100 py-[8px]
+                        px-[12px] rounded-[8px] border border-richblack-700'>
+                        Expert
+                    </button>
+                </Link>
+
+            }
         </div>
       
     </div>

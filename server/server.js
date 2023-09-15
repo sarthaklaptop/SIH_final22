@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(bodyParser.json());
+
+
 app.use(cors());
 
 // MongoDB connection (replace with your MongoDB URL)

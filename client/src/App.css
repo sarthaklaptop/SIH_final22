@@ -6,3 +6,7 @@ html,
 body {
     overflow-x: hidden;
 }
+
+.background{
+    background-image: url('../src/assets/Backgruong_home.png');
+}

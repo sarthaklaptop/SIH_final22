@@ -7,6 +7,8 @@ import Signup from "./pages/Signup"
 import Dashboard from "./pages/Dashboard"
 import { useEffect, useState } from 'react'
 import PrivateRoute from "./components/PrivateRoute";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
  
 
   return (
-    <div className="w-screen h-screen bg-richblack-900 flex flex-col">
+    <div className="w-screen h-screen background flex flex-col"> 
       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
 
       <Routes>
@@ -29,6 +31,8 @@ function App() {
           </PrivateRoute>
        
         } />
+        <Route path="/contact" element={<Contact setIsLoggedIn={setIsLoggedIn}/>}></Route>
+        <Route path="/about" element={<About setIsLoggedIn={setIsLoggedIn}/>}></Route>
 
       </Routes>
 

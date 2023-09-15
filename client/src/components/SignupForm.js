@@ -195,4 +195,4 @@ const SignupForm = ({setIsLoggedIn}) => {
   )
 }
 
-export default SignupForm
+export default SignupForm

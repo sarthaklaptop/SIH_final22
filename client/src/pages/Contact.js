@@ -35,7 +35,7 @@ const Contact = ({isLoggedIn}) => {
 
     return (
       // flex flex-row items-center mx-auto justify-center max-w-[1160px] text-white py-4 h-full w-11/12
-      <div className='flex flex-col justify-center items-center mx-auto text-white text-3xl max-w-[1160px] h-full'>
+      <div className='flex flex-col justify-center items-center mx-auto my-4 text-white text-3xl max-w-[1160px] h-full'>
         <div className='flex flex-col w-4/5 gap-5 my-4'>
           <h1>CONTACT US</h1>
           <p className='text-sm'>LET’S CONNECT: WE’RE HERE TO HELP, AND WE’D LOVE TO HEAR FROM YOU! WHETHER YOU HAVE A QUESTION, 

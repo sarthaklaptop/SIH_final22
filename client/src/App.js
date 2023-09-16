@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react'
 import PrivateRoute from "./components/PrivateRoute";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Community from "./pages/Community";
+import Review from "./components/Review";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path="/" element= {<Home isLoggedIn={isLoggedIn}/>} />
         <Route path="/login" element = {<Login  setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/signup" element={<Signup  setIsLoggedIn={setIsLoggedIn} />} />
+        <Route path="/community" element={<Community  setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}/>} />
+        <Route path="/community/review" element={<Review  setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}/>} />
         <Route path="/dashboard" element = {
           <PrivateRoute isLoggedIn={isLoggedIn}>
               <Dashboard/>

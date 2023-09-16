@@ -9,4 +9,9 @@ body {
 
 .background{
     background-image: url('../src/assets/Backgruong_home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
 }

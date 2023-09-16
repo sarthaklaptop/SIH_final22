@@ -28,6 +28,12 @@ const Navbar = (props) => {
                 <li className='hover:text-orange-400 hover:delay-75'>
                     <Link to="/contact">Contact</Link>
                 </li>
+                <li className='hover:text-orange-400 hover:delay-75'>
+                    <Link to="/community">Community</Link>
+                </li>
+                {/* <li className='hover:text-orange-400 hover:delay-75'>
+                    <Link to="/Government Benefits">Government Benefits</Link>
+                </li> */}
             </ul>
         </nav>
 
@@ -70,7 +76,18 @@ const Navbar = (props) => {
                     </button>
                 </Link>
             }
+            {
+                <select className='text-black rounded-lg py-2 text-sm' name="languages" id="lang">
+                    <option value="marathi">मराठी</option>
+                    <option selected="selected" value="english">English</option>
+                    <option value="hindi">हिंदी</option>
+                    <option value="telgu">తెలుగు</option>
+                    <option value="kannad">ಕನ್ನಡ</option>
+                </select>
+            }
         </div>
+
+        
       
     </div>
   )

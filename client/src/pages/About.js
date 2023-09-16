@@ -6,7 +6,7 @@ import AboutImageCards from '../components/AboutImageCards';
 const About = ({isLoggedIn}) => {
     return (
     <div className='flex flex-col  justify-center items-center text-white h-[100%] gap-4  '>
-        <div className='flex flex-row justify-center items-center text-white h-[100%] gap-4 p-10 mb-10'>
+        <div className='flex flex-row justify-center items-center text-white h-[100%] gap-4 p-10 mt-15'>
           <div className='flex flex-col w-1/2 gap-0 ml-10'>
             <h1 className=' text-[#ffffff] text-4xl font-bold '>Empowering Farmers Through Expertise</h1><br></br>
             <p className='text-[#515151] text-base pb-20 font-bold w-4/5'> Here, we are on a mission to revolutionize agriculture by 
